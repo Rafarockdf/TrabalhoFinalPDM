@@ -71,9 +71,11 @@ fun WelcomeScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.weight(1f))
 
-            // Botão Create Account
+
+
+            // Botão Log In
             Button(
-                onClick = { navController.navigate(Screen.CreateAccount.route) },
+                onClick = { navController.navigate(Screen.Main.route) },
                 shape = RoundedCornerShape(50),
                 modifier = Modifier
                     .fillMaxWidth()
@@ -91,24 +93,10 @@ fun WelcomeScreen(navController: NavController) {
                         ),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "CREATE ACCOUNT", color = Color.White, fontWeight = FontWeight.Bold)
+                    Text(text = "ACESSAR", color = Color.White, fontWeight = FontWeight.Bold)
                 }
             }
-
-            Spacer(modifier = Modifier.height(16.dp))
-
-            // Botão Log In
-            Button(
-                onClick = { navController.navigate(Screen.Login.route) },
-                shape = RoundedCornerShape(50),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(50.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = SecondaryGray)
-            ) {
-                Text(text = "LOG IN", color = Color.White, fontWeight = FontWeight.Bold)
-            }
-            Spacer(modifier = Modifier.height(40.dp))
+            Spacer(modifier = Modifier.height(100.dp))
         }
     }
 }

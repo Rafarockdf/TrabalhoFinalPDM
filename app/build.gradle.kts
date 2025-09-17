@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("com.google.devtools.ksp")
+
 }
 
 android {
@@ -42,7 +43,7 @@ android {
 
 dependencies {
     val room_version = "2.8.0"
-
+    implementation("com.google.dagger:hilt-android:2.48")
     implementation("androidx.room:room-runtime:$room_version")
 
     // If this project uses any Kotlin source, use Kotlin Symbol Processing (KSP)

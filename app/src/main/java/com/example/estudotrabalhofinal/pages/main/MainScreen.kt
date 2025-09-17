@@ -43,7 +43,7 @@ fun MainScreen() {
         Box(modifier = Modifier.padding(innerPadding)) {
             when (selectedItem) {
                 0 -> PersonalizedDietsScreen()
-                1 -> Text("Progress Screen") // Placeholder
+                1 -> ProgressScreen() // MUDANÇA AQUI
                 2 -> FoodAnalyzerScreen()
                 3 -> Text("Settings Screen") // Placeholder
             }

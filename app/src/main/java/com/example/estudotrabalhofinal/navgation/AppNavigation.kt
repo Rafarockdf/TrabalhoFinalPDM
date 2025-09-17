@@ -4,8 +4,6 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.estudotrabalhofinal.pages.autenticacao.cadastro.CreateAccountScreen
-import com.example.estudotrabalhofinal.pages.autenticacao.login.LoginScreen
 import com.example.estudotrabalhofinal.pages.completeprofile.CompleteProfileViewModel
 import com.example.estudotrabalhofinal.pages.main.MainScreen
 import com.example.estudotrabalhofinal.pages.welcome.WelcomeScreen
@@ -16,12 +14,6 @@ fun AppNavigation() {
     NavHost(navController = navController, startDestination = Screen.Welcome.route) {
         composable(Screen.Welcome.route) {
             WelcomeScreen(navController = navController)
-        }
-        composable(Screen.Login.route) {
-            LoginScreen(navController = navController)
-        }
-        composable(Screen.CreateAccount.route) {
-            CreateAccountScreen(navController = navController)
         }
         composable(Screen.CompleteProfile.route) {
             CompleteProfileViewModel(navController = navController)
