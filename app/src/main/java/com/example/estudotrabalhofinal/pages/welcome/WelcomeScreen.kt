@@ -36,7 +36,7 @@ fun WelcomeScreen(navController: NavController) {
             Spacer(modifier = Modifier.height(60.dp))
 
             Image(
-                painter = painterResource(id = R.drawable.ic_launcher_foreground), // Imagem de exemplo
+                painter = painterResource(R.drawable.ic_launcher_foreground), // Imagem de exemplo
                 contentDescription = "Food Bowl",
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
