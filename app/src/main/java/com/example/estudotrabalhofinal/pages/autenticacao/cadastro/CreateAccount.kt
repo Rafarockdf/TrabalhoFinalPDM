@@ -26,8 +26,8 @@ import androidx.navigation.NavController
 import com.example.estudotrabalhofinal.R
 import com.example.estudotrabalhofinal.navgation.Screen
 import com.example.estudotrabalhofinal.pages.theme.*
-
-
+import com.example.estudotrabalhofinal.data.UserDao
+import com.example.estudotrabalhofinal.data.User
 
 
 
@@ -84,6 +84,7 @@ fun CreateAccountScreen(
                     unfocusedContainerColor = MaterialTheme.colorScheme.surface,
                     focusedIndicatorColor = MaterialTheme.colorScheme.primary
                 )
+
             )
 
             Spacer(modifier = Modifier.height(16.dp))
