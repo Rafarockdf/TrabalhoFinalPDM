@@ -29,26 +29,23 @@ fun WelcomeScreen(navController: NavController) {
     ) {
         Column(
             modifier = Modifier
-                .fillMaxSize()
-                .padding(16.dp),
+                .fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Spacer(modifier = Modifier.height(60.dp))
 
             Image(
-                painter = painterResource(R.drawable.ic_launcher_foreground), // Imagem de exemplo
+                painter = painterResource(R.drawable.food_bowl), // Imagem de exemplo
                 contentDescription = "Food Bowl",
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(200.dp)
-                    .clip(RoundedCornerShape(20.dp))
+                    .height(300.dp)
             )
 
             Spacer(modifier = Modifier.height(24.dp))
 
             Image(
-                painter = painterResource(id = R.drawable.logo_foreground), // Logo de exemplo
+                painter = painterResource(id = R.drawable.logo_app), // Logo de exemplo
                 contentDescription = "Nutri-Companion Logo",
                 modifier = Modifier.size(60.dp)
             )
@@ -78,14 +75,14 @@ fun WelcomeScreen(navController: NavController) {
                 onClick = { navController.navigate(Screen.Main.route) },
                 shape = RoundedCornerShape(50),
                 modifier = Modifier
-                    .fillMaxWidth()
                     .height(50.dp),
                 contentPadding = PaddingValues(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color.Transparent)
             ) {
                 Box(
                     modifier = Modifier
-                        .fillMaxSize()
+                        .width(200.dp)
+                        .height(100.dp)
                         .background(
                             brush = Brush.horizontalGradient(
                                 colors = listOf(GradientStart, GradientEnd)
@@ -93,7 +90,7 @@ fun WelcomeScreen(navController: NavController) {
                         ),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "ACESSAR", color = Color.White, fontWeight = FontWeight.Bold)
+                    Text(text = "ACESSAR", color = Color.White, fontWeight = FontWeight.Bold, fontSize = 20.sp)
                 }
             }
             Spacer(modifier = Modifier.height(100.dp))

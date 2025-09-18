@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.estudotrabalhofinal.pages.completeprofile.CompleteProfileViewModel
+//import com.example.estudotrabalhofinal.pages.completeprofile.CompleteProfileViewModel
 import com.example.estudotrabalhofinal.pages.main.MainScreen
 import com.example.estudotrabalhofinal.pages.welcome.WelcomeScreen
 
@@ -16,7 +16,7 @@ fun AppNavigation() {
             WelcomeScreen(navController = navController)
         }
         composable(Screen.CompleteProfile.route) {
-            CompleteProfileViewModel(navController = navController)
+            //CompleteProfileViewModel(navController = navController)
         }
         composable(Screen.Main.route) {
             MainScreen() // MainScreen gerencia sua própria navegação interna (tabs)
